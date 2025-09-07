@@ -1,2 +1,2 @@
 # theladder
-I am the former of the ladder
+This is the former of the ladder
