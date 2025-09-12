@@ -1,0 +1,7 @@
+/* I'll use this for general things */
+
+body {
+  margin: 0;    /* removes the default margin */
+  padding: 0;   /* removes default padding */
+  font-family: Arial, Helvetica, sans-serif; /* your font */
+}

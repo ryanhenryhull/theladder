@@ -1,0 +1,13 @@
+/* the hero section of a website is the top part of the opening page - important.
+Here we are gonna style it */
+
+/* main image */
+
+
+.hero {
+    background-image: url('../assets/images/dna_image_free.jpg');
+    justify-content: center;
+    display: flex;
+    background-size: cover; 
+    height: 400px;
+}

@@ -1,17 +1,17 @@
 /* Nav bar styling - based on https://www.w3schools.com/css/css_navbar_vertical.asp */
 
 nav{
-    background-color:darksalmon
+    background-color:rgb(179, 119, 99)
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
+  /* this is part of what would force a vertical nav bar: width: 200px;*/
   background-color: #f1f1f1;
+  display: flex; /* this makes them go horizontal */
 }
-
 
 li a {
   display: block;
@@ -25,7 +25,10 @@ li a:hover {
   color: white;
 }
 
-li a.active {
+/* the dot operator is a class selector - that class must be written into the html
+<a> is the anchor element in html. it is used for links. so what were doing here is
+saying, for all a elements that have class active added, do x */
+li a.active { 
   background-color: #04AA6D;
   color: white;
 }
@@ -33,4 +36,12 @@ li a.active {
 li a:hover:not(.active) {
   background-color: #555555;
   color: white;
+} 
+
+li.divider{
+  display:flex;
+  align-items: center;
+  padding: 0 10px;
+  color: black;
+  font-size: 30px;
 }
