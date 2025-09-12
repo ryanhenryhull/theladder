@@ -4,21 +4,36 @@
     <title>The Ladder</title>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        /* css comment. intellij didnt process css so switched over to VSCode */
+
+    <!-- This section deals with our css-->
+    <style> /* this opens a css section. Note for most large css sections, its best to create a separate css file */
+        /* css comment */
         body {
             font-family: Arial, Helvetica, sans-serif; /* the first is prioritized but some systems may not be able, then then next is used */
         }
     </style>
+
+    <!-- linking in the css files that will be needed-->
+     <link rel="stylesheet", href="css/nav.css"> <!-- for nav bar -->
+
 </head>
 
 <body>
+    <nav>
+        <ul> <!-- Nav bar -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="learning.html">learning</a></li>
+        </ul>
+    </nav>
+
     <h1> the ladder heading oh yeah</h1>
     <p> This is my first paragraph about the ladder.This is my first paragraph about the ladder.
         This is my first paragraph about the ladder.This is my first paragraph about the ladder.
     </p>
 
-    <h2> the ladder heading 2 is smaller</h2>
+    <h2> the ladder heading 2 is smaller </h2>
     <i>the ladder italicised</i>
     <br>
     The ladder normal
