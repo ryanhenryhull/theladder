@@ -1,3 +1,5 @@
+/* Nav bar styling - based on https://www.w3schools.com/css/css_navbar_vertical.asp */
+
 nav{
     background-color:darksalmon
 }
@@ -6,4 +8,29 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555555;
+  color: white;
 }
