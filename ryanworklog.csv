@@ -7,3 +7,4 @@ ddmmyyyy,tasks_completed,minutes_spent
 12092025, 1. adding styling elements to the navigation bar. Failed to figure out different color for active state of nav bar, 10
 12092025, 1. more nav bar styling. 2. understanding hero section and adding background image. 3. removed borders on html page, 70
 16092025, 1. made nav bar transparent. 2. failed to left justify the nav bar but tried many things and learned how to use chrome devtools to diagnose errors, 30
+16092025, 1. figured out how to change color of nav bar text based on which tab is selected thus understanding html classes more, 45

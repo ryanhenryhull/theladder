@@ -5,6 +5,7 @@ nav{
     background-color: transparent;
     justify-content: flex-start; /* this makes the nav bar left justified */
     text-align: left;  /* prevent text centering */
+    color: white;
 }
 
 nav ul {
@@ -15,7 +16,7 @@ nav ul {
   background-color: transparent;
   display: flex; /* this makes them go horizontal */
   justify-content: flex-start; /* left justift */
-  width:100%; /* to try to fix left justifiedness */
+  width:auto; /* to try to fix left justifiedness */
 }
 
 nav li a {
@@ -23,6 +24,19 @@ nav li a {
   color: black;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+/* coloring the text of the nav bar differently based on if its home page or not */
+/* for this we'll need to add classes to each page's HTML which is simply their page name, to be
+able to identify them on the css as a class.*/
+body.index nav li a{
+  color: white
+}
+body.contact nav li a{
+  color: black
+}
+body.about nav li a{
+  color:blue;
 }
 
 nav li a:hover {
@@ -49,4 +63,10 @@ nav li.divider{
   padding: 0 10px;
   color: black;
   font-size: 30px;
+}
+
+.hero nav{ /* needed to fix left-justifiedness since our nav is within the hero... */
+  display: flex;
+  justify-content: flex-start;
+  width:100%;
 }
