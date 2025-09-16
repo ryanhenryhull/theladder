@@ -5,3 +5,5 @@ ddmmyyyy,tasks_completed,minutes_spent
 11092025, 1. adding nav bar and understanding how the pages will be linked., 15
 11092025, 1. adding first css style elements and how to link them in to the html, 15
 12092025, 1. adding styling elements to the navigation bar. Failed to figure out different color for active state of nav bar, 10
+12092025, 1. more nav bar styling. 2. understanding hero section and adding background image. 3. removed borders on html page, 70
+16092025, 1. made nav bar transparent. 2. failed to left justify the nav bar but tried many things and learned how to use chrome devtools to diagnose errors, 30

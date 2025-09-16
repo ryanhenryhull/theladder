@@ -1,26 +1,31 @@
 /* Nav bar styling - based on https://www.w3schools.com/css/css_navbar_vertical.asp */
 
 nav{
-    background-color:rgb(179, 119, 99)
+    display: flex; /* this allows me to have more control over horizontally laid- out elements */
+    background-color: transparent;
+    justify-content: flex-start; /* this makes the nav bar left justified */
+    text-align: left;  /* prevent text centering */
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   /* this is part of what would force a vertical nav bar: width: 200px;*/
-  background-color: #f1f1f1;
+  background-color: transparent;
   display: flex; /* this makes them go horizontal */
+  justify-content: flex-start; /* left justift */
+  width:100%; /* to try to fix left justifiedness */
 }
 
-li a {
+nav li a {
   display: block;
   color: black;
   padding: 8px 16px;
   text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
   background-color: #555555;
   color: white;
 }
@@ -28,19 +33,19 @@ li a:hover {
 /* the dot operator is a class selector - that class must be written into the html
 <a> is the anchor element in html. it is used for links. so what were doing here is
 saying, for all a elements that have class active added, do x */
-li a.active { 
+nav li a.active { 
   background-color: #04AA6D;
   color: white;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: #555555;
   color: white;
 } 
 
-li.divider{
+nav li.divider{
   display:flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 10px;
   color: black;
   font-size: 30px;
