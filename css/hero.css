@@ -9,5 +9,13 @@ Here we are gonna style it */
     justify-content: center;
     display: flex;
     background-size: cover; 
-    height: 400px;
+    height: 250px;
+}
+
+.hero-big-quote{
+    position:absolute; /* allows us to put it where we want*/
+    top: 10%;
+    left: 80%;
+    text-align:right;
+    color: white
 }

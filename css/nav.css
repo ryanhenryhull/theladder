@@ -30,30 +30,25 @@ nav li a {
 /* for this we'll need to add classes to each page's HTML which is simply their page name, to be
 able to identify them on the css as a class.*/
 body.index nav li a{
-  color: white
+  color: white;
 }
 body.contact nav li a{
-  color: black
+  color: black;
 }
 body.about nav li a{
-  color:blue;
-}
-
-nav li a:hover {
-  background-color: #555555;
-  color: white;
+  color:black;
 }
 
 /* the dot operator is a class selector - that class must be written into the html
 <a> is the anchor element in html. it is used for links. so what were doing here is
 saying, for all a elements that have class active added, do x */
 nav li a.active { 
-  background-color: #04AA6D;
+  background-color: #55825b;
   color: white;
 }
 
 nav li a:hover:not(.active) {
-  background-color: #555555;
+  background-color: #7e9e86;
   color: white;
 } 
 
@@ -69,4 +64,6 @@ nav li.divider{
   display: flex;
   justify-content: flex-start;
   width:100%;
+  font-family: sans-serif;
+  font-size: 12px;
 }
