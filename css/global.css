@@ -4,4 +4,17 @@ body {
   margin: 0;    /* removes the default margin */
   padding: 0;   /* removes default padding */
   font-family: Arial, Helvetica, sans-serif; /* your font */
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  flex: 3;
+  padding: 20px;
+}
+
+aside{
+  flex: 1;
+  padding: 20px;
+  background: #746d6d
 }
