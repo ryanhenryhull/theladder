@@ -9,4 +9,4 @@ ddmmyyyy,tasks_completed,minutes_spent
 16092025, 1. made nav bar transparent. 2. failed to left justify the nav bar but tried many things and learned how to use chrome devtools to diagnose errors, 30
 16092025, 1. figured out how to change color of nav bar text based on which tab is selected thus understanding html classes more, 45
 18092025, 1. Changed colors of nav bar. Edited text of hero section., 25
-x
+18092025, 1. adding layout to home page, 20

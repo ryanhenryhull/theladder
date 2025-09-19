@@ -6,6 +6,9 @@ nav{
     justify-content: flex-start; /* this makes the nav bar left justified */
     text-align: left;  /* prevent text centering */
     color: white;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
 }
 
 nav ul {
@@ -47,17 +50,21 @@ nav li a.active {
   color: white;
 }
 
+nav li a:not(.active){
+  background-color: rgb(154, 177, 154);
+  color: white;
+}
 nav li a:hover:not(.active) {
-  background-color: #7e9e86;
+  background-color: #627b68;
   color: white;
 } 
 
 nav li.divider{
   display:flex;
   align-items: flex-start;
-  padding: 0 10px;
+  padding: 10px;
   color: black;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .hero nav{ /* needed to fix left-justifiedness since our nav is within the hero... */
@@ -65,5 +72,6 @@ nav li.divider{
   justify-content: flex-start;
   width:100%;
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 15px;
+  z-index: 10000;
 }

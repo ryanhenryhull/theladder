@@ -1,21 +1,33 @@
 /* the hero section of a website is the top part of the opening page - important.
 Here we are gonna style it */
 
-/* main image */
-
-
 .hero {
     background-image: url('../assets/images/dna_image_free.jpg');
     justify-content: center;
     display: flex;
     background-size: cover; 
     height: 250px;
+    position: relative;
+    z-index:0;
 }
 
 .hero-big-quote{
-    position:absolute; /* allows us to put it where we want*/
-    top: 10%;
-    left: 80%;
+    position: fixed; /* allows us to put it where we want */
+    top: 1%;
+    left: 85%;
     text-align:right;
-    color: white
+    color: white;
+    z-index:1000;
+
+    /* the following CSS-only animation failed 
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -100px;
+    */
+    
 }
+
+/* we wana make the big quote fade out as we scroll. this failed. looks like we'll need JS
+@keyframes fade-out{
+    to {opacity:0;}
+} */
